@@ -1,0 +1,4 @@
+SELECT ORDERS.product_name FROM ORDERS
+JOIN CUSTOMERS on CUSTOMERS.id = ORDERS.customer_id
+WHERE UPPER(CUSTOMERS.name) = UPPER('alexey');
+
